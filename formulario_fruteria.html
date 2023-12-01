@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo_formulario</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Frutas y verduras Paco</legend> 
+            <p>Seleccione su provincia: <select name="provincias" id="provincias">
+            <option value="Cadiz">Cádiz</option>
+            <option value="Huelva">Huelva</option>
+            <option value="Sevilla">Sevilla</option>
+            <option value="Malaga">Málaga</option>
+            <option value="Cordoba">Córdoba</option>
+            <option value="Jaen">Jaen</option>
+            <option value="Granada" selected>Granada</option>
+            <option value="Almeria">Almería</option>
+            </select></p>
+            <p>Ciudad: <input type="text" id="ciudad" placeholder="Escriba su ciudad"></p>
+            <p>Código postal: <input type="number" id="cp" max="50000" min="0"></p>
+            <p>Seleccione las frutas que desee:</p>
+            <input type="radio" value="Fresas" id="Fruta1"> Fresas
+            <input type="radio" value="Manzanas" id="Fruta2"> Manzanas
+            <input type="radio" value="Peras" id="Fruta3"> Peras
+            <input type="radio" value="Platanos" id="Fruta4"> Plátanos
+            <p>Seleccione fecha de entrega: <input type="date"></p>
+            <p>
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+
+            </p>
+        </fieldset>
+
+    </form>
+</body>
+</html>
