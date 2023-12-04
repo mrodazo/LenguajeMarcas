@@ -21,10 +21,57 @@
 
         <fieldset>
             <legend>Fecha</legend>
-            <input type="date" name="fecha1" id="fecha">
+            <input type="date" name="fecha1" id="fecha" min="2023-09-01" max="2024-06-30" step="15">
+            <p> <input type="submit" value="Enviar"> </p>
+         </fieldset>
+        
+         <fieldset>
+            <legend>Contraseña</legend>
+            <input type="password" name="contrasena1" id="contrasena" required>
             <p> <input type="submit" value="Enviar"> </p>
          </fieldset>
 
+         <fieldset>
+            <legend>Color</legend>
+            <input type="color" name="color1" value="#FF00FF">
+            <p> <input type="submit" value="Enviar"> </p>
+         </fieldset>
+
+         <fieldset>
+            <legend>Ticks</legend>
+            <input type="checkbox" name="tick"> Hola
+            <p> <input type="submit" value="Enviar"> </p>
+         </fieldset>
+
+         <fieldset>
+            <legend>Eurovisión 2023</legend>
+            <input type="radio" name="Consursantes" id="FIN" value="Finlandia"> Finlandia
+            <input type="radio" name="Consursantes" value="Espana"> España
+            <input type="radio" name="Consursantes" disabled value="Suecia"> Suecia
+            <p> <input type="submit" value="Enviar"> </p>
+         </fieldset>
+
+         <fieldset>
+            <legend>Rango</legend>
+            <input type="range" value="0" min="-10" max="10" step="2">
+            <p> <input type="submit" value="Enviar"> </p>
+         </fieldset>
+
+         <fieldset>
+            <legend>Hora</legend>
+            <input type="time" name="time">
+            <p> <input type="submit" value="Enviar"> </p>
+         </fieldset>
+
+         <fieldset>
+            <legend>Eurovisión 2023</legend>
+            <select name="Paises" size="5" multiple>
+                <option value="FIN">Finlandia</option> 
+                <option value="ESP" selected>España</option>
+                <option value="SUE" disabled>Suecia</option>
+            </select>
+            <p> <input type="submit" value="Enviar"> </p>
+         </fieldset>
     </form>
     
 </body>
