@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio_1</title>
+</head>
+<body>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Datos del alumno</legend>
+
+            <label>Nombre: <input type="text" name="nombre" id="" placeholder="Ponga su nombre aquí" maxlength="25"></label><br><br>
+
+            <label>Apellidos: <input type="text" name="apellidos" id="" placeholder="Ponga sus apellidos aquí" maxlength="35"></label><br><br>
+
+            <label> Usuario Séneca/iPasen: <input type="password" name="contrasena" id="" pattern="[a-zA-Z]{0-9}" maxlength="10"></label><br><br>
+
+            <label>Fecha: <input type="date" name="fecha" id="" min="1907-03-04" max="2011-12-31" required></label><br><br> <!-- Posterior incluyendo 2011 -->
+
+            <label>Estudios que estás cursando: </label><select name="cursos" id="" required size="6">
+                <option value="egb" disabled>EGB</option>
+                <option value="eso">ESO</option>
+                <option value="fpb" selected>FPB</option>
+                <option value="fpmedio">FP Grado Medio</option>
+                <option value="fpsuperior">FP Grado Superior</option>
+                <option value="especializacion">Curso especialización</option>
+            </select><br><br>
+
+            <label>Turno: </label><br>
+            <input type="radio" name="turnos" id=""> Mañana
+            <input type="radio" name="turnos" id=""> Tarde <br><br>
+
+            <label>¿Eres mayor de edad?</label><br>
+            <label><input type="checkbox" name="mayoredad" id=""> Sí</label><br><br>
+
+            <label>Ciudad: </label> <input type="text" name="ciudad" id="" placeholder="Escriba su ciudad en mayúsculas" maxlength="25" pattern="[A-Z]"><br><br>
+
+            <label>Código postal: <input type="text" name="cpostal" id="" placeholder="Escriba su número postal." pattern="{0-9}" minlength="5" maxlength="5"></label><br><br>
+<!-- pattern [0-9] {5} Esta es la forma correcta-->
+            <label>Provincia: <input type="text" name="provincia" id="" readonly value="Cádiz"> </label><br><br>
+
+
+            <input type="submit" value="Enviar"><br><br>
+            <input type="reset" value="Volver a empezar">
+
+        </fieldset>
+    </form>
+</body>
+</html>
