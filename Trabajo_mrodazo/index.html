@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salvando_gatitos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="encabezado">
+        <p>Probando</p>
+        <!-- Puesto como "p" en lugar de "h1" porque poniendo "h1" se sale del div. -->
+      </div>
+      <div class="menu">
+        <ul class="menu-list">
+          <li class="inicio">Inicio</li>
+          <li class="mininos"><a href="mininos.html">Mininos</a></li>
+          <li class="nosotros"><a href="nosotros.html">Sobre nosotros</a></li>
+          <li class="contacto"><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="pie-pag">
+        <p>Dos</p>
+      </div>
+      <div class="cuerpo">
+        <h2>Introducción</h2>
+        <p>
+          ¿Quieres un precioso gato en tu casa pero no sabes dónde buscar? En
+          esta web recopilamos información de todos los gatitos que necesitan un
+          hogar en toda España. Puedes buscar por Comunidad Autónoma, tipo de
+          pelaje, edad... De esta forma, podrás encontrar fácilmente a tu
+          querido compañero y ponerte en contacto con la protectora sin tener
+          que estar haciendo varias búsquedas.
+        </p>
+        <br /><br /><br />
+
+        <form method="get" class="form-busqueda">
+          <h3></h3>
+          <fieldset>
+            <legend>Búsqueda</legend>
+            <div class="form-fields-container">
+              <div class="form-field">
+                <label
+                  >Comunidad Autónoma <br /><select
+                    name="comunidadAutonoma"
+                    id="autonoma"
+                  >
+                    <option value="andalucia">Andalucía</option>
+                    <option value="aragon">Aragón</option>
+                    <option value="cantabria">Cantabria</option>
+                    <option value="mancha">Castilla-La Mancha</option>
+                    <option value="leon">Castilla y León</option>
+                    <option value="catalunia">Cataluña</option>
+                    <option value="madrid">Comunidad de Madrid</option>
+                    <option value="navarra">Comunidad Foral Navarra</option>
+                    <option value="valencia">Comunidad Valenciana</option>
+                    <option value="extremadura">Extremadura</option>
+                    <option value="galicia">Galicia</option>
+                    <option value="baleares">Islas Baleares</option>
+                    <option value="canarias">Islas Canarias</option>
+                    <option value="larioja">La Rioja</option>
+                    <option value="vasco">País Vasco</option>
+                    <option value="asturias">Principado de Asturias</option>
+                    <option value="murcia">Región de Murcia</option>
+                    <option value="todas" selected>Todas</option>
+                  </select></label
+                >
+              </div>
+              <div class="form-field">
+                <label
+                  >Edad <br /><input type="radio" name="edad" value="0" />0 - 1
+                  año</label
+                ><br />
+                <label
+                  ><input type="radio" name="edad" value="1" />1 - 5 años</label
+                ><br />
+                <label
+                  ><input type="radio" name="edad" value="2" />5 - 12
+                  años</label
+                ><br />
+                <label><input type="radio" name="edad" value="3" />Todos</label>
+              </div>
+              <div class="form-field"></div>
+              <div class="form-field"></div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <div class="cats-random">
+        <img src="https://cataas.com/cat?width=300&height=300" />
+        <!--Para que las imágenes sean 300x300 px-->
+      </div>
+      <div class="colaboradores">
+        <ul>
+          <li>pkdjf</li>
+          <li>pkdjf</li>
+          <li>pkdjf</li>
+          <li>pkdjf</li>
+          <li>pkdjf</li>
+          <li>pkdjf</li>
+          <li>pkdjf</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

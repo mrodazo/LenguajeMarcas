@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  top: 0;
+  left: 0;
+  background-color: rgb(157, 226, 225);
+  font-family: Verdana, Arial, sans-serif;
+}
+.container {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 15% 8% 54% 25% 8%;
+  gap: 5px 5px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "encabezado encabezado"
+    "menu menu"
+    "cuerpo cats-random"
+    "cuerpo colaboradores"
+    "pie-pag pie-pag";
+}
+
+.encabezado {
+  display: flex; /*Para poder alinear el texto de manera sencilla*/
+  justify-content: center;
+  align-items: center;
+  margin: 8px 8px 0px 8px;
+  padding: 0;
+  grid-area: encabezado;
+  background-color: rgb(51, 198, 220);
+  border-radius: 5em;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 450%;
+  color: rgb(181, 38, 172);
+}
+
+.menu {
+  margin: 8px;
+  grid-area: menu;
+  grid-row: auto;
+  background-color: darkgrey;
+  padding: 8px;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+}
+
+.cuerpo {
+  grid-area: cuerpo;
+  margin: 16px;
+  text-align: justify;
+}
+
+.cats-random {
+  grid-area: cats-random;
+  width: 300px;
+  height: auto;
+}
+
+.colaboradores {
+  grid-area: colaboradores;
+}
+
+.pie-pag {
+  grid-area: pie-pag;
+  margin: 8px;
+}
+
+.form-busqueda > fieldset {
+  /*Va a aplicar el padding al hijo directo de form-busqueda (fieldset)*/
+  padding: 8px;
+}
+
+.form-fields-container {
+  display: flex;
+  flex-direction: row; /*Los elementos se alinean en una fila, aunque se muestren en varias columnas*/
+}
+
+.form-field {
+  flex: 1;
+}
