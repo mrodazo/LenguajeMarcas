@@ -20,11 +20,10 @@
           <li class="contacto"><a href="contacto.html">Contacto</a></li>
         </ul>
       </div>
-      <div class="pie-pag">
-        <p>Dos</p>
-      </div>
+
       <div class="cuerpo">
-        <h2>Introducción</h2>
+        <p class="section-title">Introducción</p>
+        <br />
         <p>
           ¿Quieres un precioso gato en tu casa pero no sabes dónde buscar? En
           esta web recopilamos información de todos los gatitos que necesitan un
@@ -35,13 +34,12 @@
         </p>
         <br /><br /><br />
 
-        <form method="get" class="form-busqueda">
-          <h3></h3>
+        <form method="get" class="form-busqueda" action="mininos.html">
           <fieldset>
-            <legend>Búsqueda</legend>
+            <legend class="section-title">Búsqueda</legend>
             <div class="form-fields-container">
               <div class="form-field">
-                <label
+                <label class="form-title"
                   >Comunidad Autónoma <br /><select
                     name="comunidadAutonoma"
                     id="autonoma"
@@ -68,28 +66,60 @@
                 >
               </div>
               <div class="form-field">
-                <label
-                  >Edad <br /><input type="radio" name="edad" value="0" />0 - 1
-                  año</label
+                <p class="form-title">Edad <br /></p>
+                <label><input type="checkbox" name="bebe" />0 - 1 año</label
                 ><br />
                 <label
-                  ><input type="radio" name="edad" value="1" />1 - 5 años</label
+                  ><input type="checkbox" name="adolescente" />1 - 5 años</label
                 ><br />
-                <label
-                  ><input type="radio" name="edad" value="2" />5 - 12
-                  años</label
+                <label><input type="checkbox" name="adulto" />5 - 12 años</label
                 ><br />
-                <label><input type="radio" name="edad" value="3" />Todos</label>
+                <label><input type="checkbox" name="edad" />Todos</label>
               </div>
-              <div class="form-field"></div>
-              <div class="form-field"></div>
+              <div class="form-field">
+                <p class="form-title">Sexo <br /></p>
+                <label
+                  ><input
+                    type="radio"
+                    name="sexo"
+                    value="hembra"
+                  />Hembra</label
+                ><br />
+                <label
+                  ><input type="radio" name="sexo" value="macho" />Macho</label
+                ><br />
+                <label
+                  ><input type="radio" name="sexo" value="ambos" />Ambos</label
+                ><br />
+              </div>
+              <div class="form-field">
+                <p class="form-title">Color</p>
+                <label
+                  ><input type="checkbox" name="negro" /> Negro <br
+                /></label>
+                <label
+                  ><input type="checkbox" name="blanco" /> Blanco <br
+                /></label>
+                <label
+                  ><input type="checkbox" name="naranja" /> Naranja <br
+                /></label>
+                <label><input type="checkbox" name="gris" /> Gris <br /></label>
+                <label
+                  ><input type="checkbox" name="marron" /> Marrón <br
+                /></label>
+              </div>
             </div>
+            <button type="submit" class="boton" value="Buscar">Buscar</button>
           </fieldset>
         </form>
       </div>
       <div class="cats-random">
-        <img src="https://cataas.com/cat?width=300&height=300" />
-        <!--Para que las imágenes sean 300x300 px-->
+        <!--Para que las imágenes sean del tamaño que queremos (px)-->
+        <img
+          src="https://cataas.com/cat?width=400&height=400"
+          height="400"
+          width="400"
+        />
       </div>
       <div class="colaboradores">
         <ul>
@@ -101,6 +131,9 @@
           <li>pkdjf</li>
           <li>pkdjf</li>
         </ul>
+      </div>
+      <div class="pie-pag">
+        <p>Dos</p>
       </div>
     </div>
   </body>

@@ -1,18 +1,14 @@
-* {
-  padding: 0;
-  margin: 0;
-}
 body {
-  top: 0;
-  left: 0;
   background-color: rgb(157, 226, 225);
   font-family: Verdana, Arial, sans-serif;
+  --primary-color: rgb(51, 198, 220);
+  --line-color: rgb(158, 100, 5);
 }
+
 .container {
   display: grid;
   grid-template-columns: 70% 30%;
-  grid-template-rows: 15% 8% 54% 25% 8%;
-  gap: 5px 5px;
+  grid-template-rows: 15% 8% 54% auto 8%; /*Auto para que el pie de página no se salga de la misma*/
   grid-auto-flow: row;
   grid-template-areas:
     "encabezado encabezado"
@@ -29,7 +25,7 @@ body {
   margin: 8px 8px 0px 8px;
   padding: 0;
   grid-area: encabezado;
-  background-color: rgb(51, 198, 220);
+  background-color: var(--primary-color);
   border-radius: 5em;
   text-transform: uppercase;
   font-weight: 900;
@@ -59,23 +55,27 @@ body {
 }
 
 .cats-random {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   grid-area: cats-random;
-  width: 300px;
-  height: auto;
+  width: 100%;
+  margin: 16px 0px;
 }
 
+.cats-random img {
+  width: 400px;
+  height: 400px;
+}
 .colaboradores {
   grid-area: colaboradores;
-}
-
-.pie-pag {
-  grid-area: pie-pag;
-  margin: 8px;
+  margin: 4px 24px 16px 24px;
 }
 
 .form-busqueda > fieldset {
   /*Va a aplicar el padding al hijo directo de form-busqueda (fieldset)*/
   padding: 8px;
+  border-color: var(--line-color);
 }
 
 .form-fields-container {
@@ -85,4 +85,27 @@ body {
 
 .form-field {
   flex: 1;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.form-title {
+  font-weight: 600;
+}
+
+.boton {
+  border: 3px solid var(--line-color);
+  padding: 8px;
+  background-color: var(--primary-color);
+  font-weight: 600;
+  float: right;
+}
+
+.pie-pag {
+  display: flex;
+  grid-area: pie-pag;
+  margin: 8px;
 }
