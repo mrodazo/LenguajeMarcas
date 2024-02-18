@@ -5,15 +5,15 @@ body {
   --line-color: rgb(158, 100, 5);
 }
 
-.container {
+.main-container {
   display: grid;
   grid-template-columns: 70% 30%;
   grid-template-rows: 15% 8% 54% auto 8%; /*Auto para que el pie de página no se salga de la misma*/
   grid-auto-flow: row;
   grid-template-areas:
-    "encabezado encabezado"
+    "encabezado encabezado" /* Viene duplicado porque son 2 columnas y ocupa todo ese espacio*/
     "menu menu"
-    "cuerpo cats-random"
+    "cuerpo mininos-random"
     "cuerpo colaboradores"
     "pie-pag pie-pag";
 }
@@ -39,6 +39,7 @@ body {
   grid-row: auto;
   background-color: darkgrey;
   padding: 8px;
+  font-size: 18px;
 }
 
 .menu-list {
@@ -48,31 +49,34 @@ body {
   list-style-type: none;
 }
 
-.cuerpo {
+.main-cuerpo {
   grid-area: cuerpo;
   margin: 16px;
   text-align: justify;
 }
 
-.cats-random {
+.mininos-random {
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-area: cats-random;
+  grid-area: mininos-random;
   width: 100%;
   margin: 16px 0px;
 }
 
-.cats-random img {
+.mininos-random img {
   width: 400px;
   height: 400px;
 }
 .colaboradores {
   grid-area: colaboradores;
-  margin: 4px 24px 16px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.form-busqueda > fieldset {
+.form-busqueda-horizontal > fieldset {
   /*Va a aplicar el padding al hijo directo de form-busqueda (fieldset)*/
   padding: 8px;
   border-color: var(--line-color);
@@ -108,4 +112,103 @@ body {
   display: flex;
   grid-area: pie-pag;
   margin: 8px;
+  position: absolute;
+  bottom: 0;
+}
+
+.mininos-container {
+  display: grid;
+  grid-template-columns: 100%;
+
+  grid-template-rows: 125px 70px auto 70px; /*Auto para que el pie de página no se salga de la misma*/
+  grid-auto-flow: row;
+  grid-template-areas:
+    "encabezado"
+    "menu"
+    "mininos-cuerpo"
+    "pie-pag";
+}
+
+.mininos-cuerpo {
+  grid-area: mininos-cuerpo;
+  width: 100%;
+  display: flex;
+  padding-top: 16px;
+}
+
+.form-busqueda-vertical .form-fields-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: baseline;
+}
+
+.mininos-galeria {
+  flex: 4; /*Hacemos que la galería tenga 4 veces más tamaño que el formulario*/
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  max-height: 70vh; /* 70% de la altura total de la pantalla "viewport"*/
+  margin-right: 16px;
+}
+
+.mininos-formulario {
+  flex: 1;
+}
+
+.minino-item {
+  display: flex;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.minino-item-content {
+  margin-left: 16px;
+}
+
+.minino-item-name {
+  font-size: 18px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.minino-item-label {
+  font-weight: bold;
+}
+
+.minino-item-botones {
+  flex: 1; /*Si este es el único hijo que tiene flex, crece al espacio sobrante*/
+  align-self: flex-end; /*Para que sólo este hijo sea el que se alinee*/
+}
+
+.boton-apadrinar {
+  background-color: rgb(40, 81, 214);
+  color: white;
+  margin-right: 16px;
+}
+
+.nosotros-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 125px 70px auto 70px; /*Auto para que el pie de página no se salga de la misma*/
+  grid-auto-flow: row;
+  grid-template-areas:
+    "encabezado" /* Viene duplicado porque son 2 columnas y ocupa todo ese espacio*/
+    "menu"
+    "nosotros-cuerpo";
+}
+
+.nosotros-cuerpo {
+  grid-area: nosotros-cuerpo;
+  text-align: justify;
+}
+
+.minino-nosotros {
+  display: flex;
+  justify-content: center;
+}
+
+.mininos-galeria .section-title {
+  padding-left: 16px;
 }

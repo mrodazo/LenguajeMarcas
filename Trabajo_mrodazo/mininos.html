@@ -4,6 +4,267 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mininos</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="mininos-container">
+      <div class="encabezado">
+        <p>Salvando Gatitos</p>
+        <!-- Puesto como "p" en lugar de "h1" porque poniendo "h1" se sale del div. -->
+      </div>
+      <div class="menu">
+        <ul class="menu-list">
+          <li class="inicio"><a href="index.html">Inicio</a></li>
+          <li class="mininos">Mininos</li>
+          <li class="nosotros"><a href="nosotros.html">Sobre nosotros</a></li>
+        </ul>
+      </div>
+
+      <div class="mininos-cuerpo">
+        <div class="mininos-galeria">
+          <p class="section-title">Mininos</p>
+
+          <!--Para que las imágenes sean del tamaño que queremos (px)-->
+          <div class="minino-item">
+            <img
+              class="minino-item-img"
+              src="https://cataas.com/cat?width=200&height=200"
+              height="200"
+              width="200"
+            />
+            <div class="minino-item-content">
+              <p class="minino-item-name">Pepito</p>
+              <p><span class="minino-item-label"> Sexo:</span> macho</p>
+              <p><span class="minino-item-label"> Edad:</span> 2 años</p>
+              <p><span class="minino-item-label"> Localización:</span> Cádiz</p>
+            </div>
+            <div class="minino-item-botones">
+              <button type="button" class="boton" value="Adoptar">
+                Adoptar
+              </button>
+              <!--Para poner 2 clases se ponen separadas por un espacio-->
+              <button
+                type="button"
+                class="boton boton-apadrinar"
+                value="Apadrinar"
+              >
+                Apadrinar
+              </button>
+            </div>
+          </div>
+          <div class="minino-item">
+            <img
+              class="minino-item-img"
+              src="https://cataas.com/cat?width=200&height=200"
+              height="200"
+              width="200"
+            />
+            <div class="minino-item-content">
+              <p class="minino-item-name">Pepito</p>
+              <p><span class="minino-item-label"> Sexo:</span> macho</p>
+              <p><span class="minino-item-label"> Edad:</span> 2 años</p>
+              <p><span class="minino-item-label"> Localización:</span> Cádiz</p>
+            </div>
+            <div class="minino-item-botones">
+              <button type="button" class="boton" value="Adoptar">
+                Adoptar
+              </button>
+              <button
+                type="button"
+                class="boton boton-apadrinar"
+                value="Apadrinar"
+              >
+                Apadrinar
+              </button>
+            </div>
+          </div>
+
+          <div class="minino-item">
+            <img
+              class="minino-item-img"
+              src="https://cataas.com/cat?width=200&height=200"
+              height="200"
+              width="200"
+            />
+            <div class="minino-item-content">
+              <p class="minino-item-name">Pepito</p>
+              <p><span class="minino-item-label"> Sexo:</span> macho</p>
+              <p><span class="minino-item-label"> Edad:</span> 2 años</p>
+              <p><span class="minino-item-label"> Localización:</span> Cádiz</p>
+            </div>
+            <div class="minino-item-botones">
+              <button type="button" class="boton" value="Adoptar">
+                Adoptar
+              </button>
+              <button
+                type="button"
+                class="boton boton-apadrinar"
+                value="Apadrinar"
+              >
+                Apadrinar
+              </button>
+            </div>
+          </div>
+          <div class="minino-item">
+            <img
+              class="minino-item-img"
+              src="https://cataas.com/cat?width=200&height=200"
+              height="200"
+              width="200"
+            />
+            <div class="minino-item-content">
+              <p class="minino-item-name">Pepito</p>
+              <p><span class="minino-item-label"> Sexo:</span> macho</p>
+              <p><span class="minino-item-label"> Edad:</span> 2 años</p>
+              <p><span class="minino-item-label"> Localización:</span> Cádiz</p>
+            </div>
+            <div class="minino-item-botones">
+              <button type="button" class="boton" value="Adoptar">
+                Adoptar
+              </button>
+              <button
+                type="button"
+                class="boton boton-apadrinar"
+                value="Apadrinar"
+              >
+                Apadrinar
+              </button>
+            </div>
+          </div>
+          <div class="minino-item">
+            <img
+              class="minino-item-img"
+              src="https://cataas.com/cat?width=200&height=200"
+              height="200"
+              width="200"
+            />
+            <div class="minino-item-content">
+              <p class="minino-item-name">Pepito</p>
+              <p><span class="minino-item-label"> Sexo:</span> macho</p>
+              <p><span class="minino-item-label"> Edad:</span> 2 años</p>
+              <p><span class="minino-item-label"> Localización:</span> Cádiz</p>
+            </div>
+            <div class="minino-item-botones">
+              <button type="button" class="boton" value="Adoptar">
+                Adoptar
+              </button>
+              <button
+                type="button"
+                class="boton boton-apadrinar"
+                value="Apadrinar"
+              >
+                Apadrinar
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="mininos-formulario">
+          <form
+            method="get"
+            class="form-busqueda-vertical"
+            action="mininos.html"
+          >
+            <fieldset>
+              <legend class="section-title">Búsqueda</legend>
+              <div class="form-fields-container">
+                <div class="form-field">
+                  <label class="form-title"
+                    >Comunidad Autónoma <br /><select
+                      name="comunidadAutonoma"
+                      id="autonoma"
+                    >
+                      <option value="andalucia">Andalucía</option>
+                      <option value="aragon">Aragón</option>
+                      <option value="cantabria">Cantabria</option>
+                      <option value="mancha">Castilla-La Mancha</option>
+                      <option value="leon">Castilla y León</option>
+                      <option value="catalunia">Cataluña</option>
+                      <option value="madrid">Comunidad de Madrid</option>
+                      <option value="navarra">Comunidad Foral Navarra</option>
+                      <option value="valencia">Comunidad Valenciana</option>
+                      <option value="extremadura">Extremadura</option>
+                      <option value="galicia">Galicia</option>
+                      <option value="baleares">Islas Baleares</option>
+                      <option value="canarias">Islas Canarias</option>
+                      <option value="larioja">La Rioja</option>
+                      <option value="vasco">País Vasco</option>
+                      <option value="asturias">Principado de Asturias</option>
+                      <option value="murcia">Región de Murcia</option>
+                      <option value="todas" selected>Todas</option>
+                    </select></label
+                  >
+                </div>
+                <div class="form-field">
+                  <p class="form-title">Edad <br /></p>
+                  <label><input type="checkbox" name="bebe" />0 - 1 año</label
+                  ><br />
+                  <label
+                    ><input type="checkbox" name="adolescente" />1 - 5
+                    años</label
+                  ><br />
+                  <label
+                    ><input type="checkbox" name="adulto" />5 - 12 años</label
+                  ><br />
+                  <label><input type="checkbox" name="edad" />Todos</label>
+                </div>
+                <div class="form-field">
+                  <p class="form-title">Sexo <br /></p>
+                  <label
+                    ><input
+                      type="radio"
+                      name="sexo"
+                      value="hembra"
+                    />Hembra</label
+                  ><br />
+                  <label
+                    ><input
+                      type="radio"
+                      name="sexo"
+                      value="macho"
+                    />Macho</label
+                  ><br />
+                  <label
+                    ><input
+                      type="radio"
+                      name="sexo"
+                      value="ambos"
+                    />Ambos</label
+                  ><br />
+                </div>
+                <div class="form-field">
+                  <p class="form-title">Color</p>
+                  <label
+                    ><input type="checkbox" name="negro" /> Negro <br
+                  /></label>
+                  <label
+                    ><input type="checkbox" name="blanco" /> Blanco <br
+                  /></label>
+                  <label
+                    ><input type="checkbox" name="naranja" /> Naranja <br
+                  /></label>
+                  <label
+                    ><input type="checkbox" name="gris" /> Gris <br
+                  /></label>
+                  <label
+                    ><input type="checkbox" name="marron" /> Marrón <br
+                  /></label>
+                </div>
+              </div>
+              <button type="submit" class="boton" value="Buscar">Buscar</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+
+      <div class="pie-pag">
+        <p>
+          Asociación Salvando Gatitos - 2024 &reg; Para contactar con nosotros,
+          envía un email a:
+          <a href="mailto: salvando_gatitos@gmail.com"
+            >salvando-gatitos@gmail.com</a
+          >
+        </p>
+      </div>
+    </div>
+  </body>
 </html>

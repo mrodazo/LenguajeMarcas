@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salvando_Gatitos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="nosotros-container">
+      <div class="encabezado">
+        <p>Salvando Gatitos</p>
+        <!-- Puesto como "p" en lugar de "h1" porque poniendo "h1" se sale del div. -->
+      </div>
+      <div class="menu">
+        <ul class="menu-list">
+          <li class="mininos"><a href="index.html">Inicio</a></li>
+          <li class="mininos"><a href="mininos.html">Mininos</a></li>
+          <li class="nosotros">Sobre nosotros</li>
+        </ul>
+      </div>
+
+      <div class="nosotros-cuerpo">
+        <p class="section-title">Sobre nosotros</p>
+        <br />
+        <p>
+          ¿Quieres un precioso gato en tu casa pero no sabes dónde buscar? En
+          esta web recopilamos información de todos los gatitos que necesitan un
+          hogar en toda España. Puedes buscar por Comunidad Autónoma, tipo de
+          pelaje, edad... De esta forma, podrás encontrar fácilmente a tu
+          querido compañero y ponerte en contacto con la protectora sin tener
+          que estar haciendo varias búsquedas.
+        </p>
+      </div>
+      <div class="minino-nosotros">
+        <!--Para que las imágenes sean del tamaño que queremos (px)-->
+        <img
+          id="minino-nosotros-img"
+          src="https://cataas.com/cat?width=600&height=600"
+          height="600"
+          width="600"
+        />
+      </div>
+
+      <div class="pie-pag">
+        <p>
+          Asociación Salvando Gatitos - 2024 &reg; Para contactar con nosotros,
+          envía un email a:
+          <a href="mailto: salvando_gatitos@gmail.com"
+            >salvando-gatitos@gmail.com</a
+          >
+        </p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+
+    <script>
+      updateImg("minino-nosotros-img", 600);
+    </script>
+  </body>
+</html>

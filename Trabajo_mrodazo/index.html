@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Salvando_gatitos</title>
+    <title>Salvando_Gatitos</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="main-container">
       <div class="encabezado">
-        <p>Probando</p>
+        <p>Salvando Gatitos</p>
         <!-- Puesto como "p" en lugar de "h1" porque poniendo "h1" se sale del div. -->
       </div>
       <div class="menu">
@@ -17,11 +17,10 @@
           <li class="inicio">Inicio</li>
           <li class="mininos"><a href="mininos.html">Mininos</a></li>
           <li class="nosotros"><a href="nosotros.html">Sobre nosotros</a></li>
-          <li class="contacto"><a href="contacto.html">Contacto</a></li>
         </ul>
       </div>
 
-      <div class="cuerpo">
+      <div class="main-cuerpo">
         <p class="section-title">Introducción</p>
         <br />
         <p>
@@ -34,7 +33,11 @@
         </p>
         <br /><br /><br />
 
-        <form method="get" class="form-busqueda" action="mininos.html">
+        <form
+          method="get"
+          class="form-busqueda-horizontal"
+          action="mininos.html"
+        >
           <fieldset>
             <legend class="section-title">Búsqueda</legend>
             <div class="form-fields-container">
@@ -113,28 +116,46 @@
           </fieldset>
         </form>
       </div>
-      <div class="cats-random">
+      <div class="mininos-random">
         <!--Para que las imágenes sean del tamaño que queremos (px)-->
         <img
+          id="mininos-random-img"
           src="https://cataas.com/cat?width=400&height=400"
           height="400"
           width="400"
         />
       </div>
       <div class="colaboradores">
+        <p class="section-title">Colaboradores</p>
         <ul>
-          <li>pkdjf</li>
-          <li>pkdjf</li>
-          <li>pkdjf</li>
-          <li>pkdjf</li>
-          <li>pkdjf</li>
-          <li>pkdjf</li>
-          <li>pkdjf</li>
+          <li><a href="https://refugiokimba.org/">Refugio Kimba</a></li>
+          <li>
+            <a href="https://barcelonagatigos.org/?lang=ca"
+              >ASSOCIACIÓ GAT I GOS</a
+            >
+          </li>
+          <li><a href="https://abrazoanimal.org/">Abrazo Animal</a></li>
+          <li><a href="https://www.lagatoteca.es/">La Gatoteca</a></li>
+          <li><a href="https://miaumor.com/">Miaumor Asociación Felina</a></li>
+          <li>
+            <a href="https://aristochat.es/">Aristochat Asociación Felina</a>
+          </li>
         </ul>
       </div>
       <div class="pie-pag">
-        <p>Dos</p>
+        <p>
+          Asociación Salvando Gatitos - 2024 &reg; Para contactar con nosotros,
+          envía un email a:
+          <a href="mailto: salvando_gatitos@gmail.com"
+            >salvando-gatitos@gmail.com</a
+          >
+        </p>
       </div>
     </div>
+    <script src="app.js"></script>
+
+    <script>
+      updateImg("mininos-random-img", 400);
+    </script>
   </body>
 </html>
