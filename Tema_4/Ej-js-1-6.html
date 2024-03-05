@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ej_JS_1-5</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      let num1 = parseInt(prompt("Indique un número: ")); //Para asegurar que es Int
+      let num2 = parseInt(prompt("Indique otro número: "));
+      let num3 = parseInt(prompt("Indique otro número más: "));
+      if (num1 == num2 && num2 == num3) {
+        document.write("Los 3 números son iguales");
+      } else if (num1 < num2) {
+        if (num2 < num3) {
+          document.write("El número: " + num3 + " es el mayor de los 3");
+        } else document.write("El número: " + num2 + " es el mayor de los 3");
+      } else if (num2 < num1) {
+        if (num1 < num3) {
+          document.write("El número: " + num3 + " es el mayor de los 3");
+        } else document.write("El número: " + num1 + " es el mayor de los 3");
+      }
+    </script>
+  </body>
+</html>

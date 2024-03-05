@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ej_JS_1-3</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      let num1 = parseInt(prompt("Indique un número: ")); //Para asegurar que es Int
+      let num2 = parseInt(prompt("Indique otro número: "));
+      let suma = num1 + num2; //Si no suma 2 Int, lo que hace es concatenar
+      let multi = num1 * num2;
+      document.write(
+        "La suma de ambos números es: " + num1 + " + " + num2 + " = " + suma
+      );
+      document.write(
+        "<br>La multiplicación de ambos números es: " +
+          num1 +
+          " * " +
+          num2 +
+          " = " +
+          multi
+      );
+    </script>
+  </body>
+</html>

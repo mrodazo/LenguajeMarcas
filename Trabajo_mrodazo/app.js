@@ -7,3 +7,11 @@ function updateImg(elementId, size, time = 10000) {
     }
   }, time);
 }
+
+function apadrinar() {
+  alert("Coming soon!");
+}
+
+function adoptar() {
+  alert("Coming soon!");
+}
