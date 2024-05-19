@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS_act1</title>
+  </head>
+  <body>
+    <script language="JavaScript">
+      /*Escribir una función llamada contrasenaValida que reciba un string y retorne
+        true si el string es igual a "2Fj(jjbFsuj" o "eoZiugBf&g9".
+        De lo contrario debe retornar false.*/
+
+      // escribe tu respuesta acá
+
+      function contrasenaValida(param) {
+        let clave1 = "2Fj(jjbFsuj";
+        let clave2 = "eoZiugBf&g9";
+
+        //Si la expresión es cierta, devuelve True, si no False
+        return param === clave1 || param === clave2;
+      }
+      // código de prueba
+      console.log(contrasenaValida("2Fj(jjbFsuj")); // true
+      console.log(contrasenaValida("eoZiugBf&g9")); // true
+      console.log(contrasenaValida("hola")); // false
+      console.log(contrasenaValida("")); // false
+      //Para ver este resultado, ejecutar (Go Live) y darle a F12 (consola)
+    </script>
+  </body>
+</html>

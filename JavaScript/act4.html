@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS_act4</title>
+  </head>
+  <body>
+    <script language="JavaScript">
+      /*Escribir una función llamada imprimirArreglo que reciba un arreglo e
+       imprima cada elemento en una línea a parte:*/
+
+      // escribe tu respuesta acá
+      function imprimirArreglo() {
+        //Se crea la variable args como Array formado por los argumentos de la función
+        let args = Array.from(arguments);
+        for (var i = 0; i < args.length; i++) {
+          console.log(args[i]);
+        }
+      }
+
+      // código de prueba
+      //Aquí no hace falta console.log porque la función ya lo hace
+      imprimirArreglo(1, "Hola", 2, "Mundo");
+      // 1
+      // Hola
+      // 2
+      // Mundo
+    </script>
+  </body>
+</html>

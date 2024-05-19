@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS_act6_guppy</title>
+  </head>
+  <body>
+    <script language="JavaScript">
+      /*Escribir una función llamada fizzBuzz que reciba un número y retorne
+       un string de acuerdo a lo siguiente:
+• "fizz" si el número es múltiplo de 3.
+• "buzz" si el número es múltiplo de 5.
+• "fizzbuzz" si el número es múltiplo tanto de 3 como de 5.
+• Si no cumple ninguna de las condiciones anteriores debe retornar el mismo número.*/
+
+      // escribe tu respuesta acá
+      function fizzBuzz(num) {
+        let result = "";
+        if (num % 3 == 0) {
+          result += "fizz";
+        } else if (num % 5 == 0) {
+          result += "Buzz";
+        }
+        if (result.length === 0) {
+          return num;
+        } else {
+          return result;
+        }
+      }
+
+      // código de prueba
+      console.log(fizzBuzz(6)); // "fizz"
+      console.log(fizzBuzz(20)); // "buzz"
+      console.log(fizzBuzz(30)); // "fizzbuzz"
+      console.log(fizzBuzz(8)); // 8
+    </script>
+  </body>
+</html>

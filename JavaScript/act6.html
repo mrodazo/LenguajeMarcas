@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS_act6</title>
+  </head>
+  <body>
+    <script language="JavaScript">
+      /*Escribir una función llamada fizzBuzz que reciba un número y retorne
+       un string de acuerdo a lo siguiente:
+• "fizz" si el número es múltiplo de 3.
+• "buzz" si el número es múltiplo de 5.
+• "fizzbuzz" si el número es múltiplo tanto de 3 como de 5.
+• Si no cumple ninguna de las condiciones anteriores debe retornar el mismo número.*/
+
+      // escribe tu respuesta acá
+      function fizzBuzz(num) {
+        //Para no repetir código, metemos en variables las comparaciones
+        let isFizz = num % 3 == 0;
+        let isBuzz = num % 5 == 0;
+        //Si el resto de ambas divisiones es 0 es que es múltiplo de ambos
+        if (isFizz && isBuzz) {
+          return "fizzBuzz";
+          //Si no, miramos primero si es múltiplo de 3 de la misma forma
+        } else if (isFizz) {
+          return "fizz";
+          //Si no, si es de 5
+        } else if (isBuzz) {
+          return "Buzz";
+          //Si no es múltiplo de ninguno, retorna el número como se pide
+        } else return num;
+      }
+
+      // código de prueba
+      console.log(fizzBuzz(6)); // "fizz"
+      console.log(fizzBuzz(20)); // "buzz"
+      console.log(fizzBuzz(30)); // "fizzbuzz"
+      console.log(fizzBuzz(8)); // 8
+    </script>
+  </body>
+</html>
