@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS_act13</title>
+  </head>
+  <body>
+    <script language="JavaScript">
+      /*Escribir una función llamada removerCeros que reciba un arreglo de números y
+       retorne un nuevo arreglo excluyendo los ceros (0).*/
+
+      // escribe tu respuesta acá
+      function removerCeros(arreglo) {
+        //filter va por cada elemento del array mirando si el item es distinto de cero, si
+        //lo es, lo devuelve, si no, no. LLeva un bucle interno.
+        return arreglo.filter((item) => item !== 0);
+      }
+      // código de prueba
+      console.log(removerCeros([0, 1, 0, 2, 0, 3])); // [1, 2, 3]
+      console.log(removerCeros([9, 3, 6, 4])); // [9, 3, 6, 4]
+      console.log(removerCeros([0, 0, 0])); // []
+    </script>
+  </body>
+</html>
