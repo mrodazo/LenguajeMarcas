@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS_act9</title>
+  </head>
+  <body>
+    <script language="JavaScript">
+      /*Escribir una función llamada numeroDeAes que reciba un string y retorne
+       el número de veces que aparece la letra "a".*/
+
+      // escribe tu respuesta acá
+      function numeroDeAes(palabra) {
+        let cont = 0;
+
+        //El bucle va a ir recorriendo cada una de las letras de la palabra
+        for (var i = 0; i <= palabra.length; i++) {
+          //Si la letra coincide con la 'a' el contador aumenta
+          if (palabra[i] == "a") {
+            cont++;
+          }
+        }
+        return cont;
+      }
+
+      // código de prueba
+      console.log(numeroDeAes("abracadabra")); // 5
+      console.log(numeroDeAes("etinol")); // 0
+      console.log(numeroDeAes("")); // 0
+    </script>
+  </body>
+</html>

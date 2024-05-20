@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS_act10</title>
+  </head>
+  <body>
+    <script language="JavaScript">
+      /*Escribir una función llamada numeroDeCaracteres que reciba un string y un caracter
+       (un string de un caracter). La función debe retornar el número de veces que aparece
+       el caracter en el string..*/
+
+      // escribe tu respuesta acá
+      function numeroDeCaracteres(palabra, letra) {
+        let cont = 0;
+
+        //El bucle va a ir recorriendo cada una de las letras de la palabra
+        for (var i = 0; i <= palabra.length; i++) {
+          //Si la letra coincide con la letra recibida por parámetro el contador aumenta
+          if (palabra[i] == letra) {
+            cont++;
+          }
+        }
+        return cont;
+      }
+
+      // código de prueba
+      console.log(numeroDeCaracteres("Hola Mundo", "o")); // 2
+      console.log(numeroDeCaracteres("MMMMM", "m")); // 0
+      console.log(numeroDeCaracteres("eeee", "e")); // 4
+    </script>
+  </body>
+</html>
