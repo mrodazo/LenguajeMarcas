@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JS_act12</title>
+    <title>JS_act12a</title>
   </head>
   <body>
     <script language="JavaScript">
@@ -14,20 +14,30 @@
       function multiplicarArreglo(arreglo) {
         //Se inicializa la variable con el valor del primer número del arreglo, para no multiplicar
         //por 0
-        let multi = arreglo[0];
 
-        //El bucle va a ir recorriendo cada una de los números del arreglo
-        for (var i = 1; i < arreglo.length; i++) {
-          //
-          multi *= arreglo[i];
+        //Primero comprueba que la entrada no sea un array, para saltar un error
+        if (!Array.isArray(arreglo)) {
+          throw new Error("La entrada debe ser un arreglo");
         }
-        return multi;
-      }
 
+        //Si no, mira si el parámetro array está vacío, retorna 0
+        else if (arreglo.length == 0) {
+          return 0;
+        } else {
+          //
+          let multi = 1;
+          //El bucle va a ir recorriendo cada una de los números del arreglo
+          for (var i = 0; i < arreglo.length; i++) {
+            //Se inicializa la variable con un 1, para no multiplicar por 0
+            multi *= arreglo[i];
+          }
+          return multi;
+        }
+      }
       // código de prueba
       console.log(multiplicarArreglo([4, 1, 2, 3])); // 24
       console.log(multiplicarArreglo([1, 2, 3, 4, 5, 6, 7, 8])); // 40320
-      console.log(multiplicarArreglo([])); // 1
+      console.log(multiplicarArreglo([])); // null
     </script>
   </body>
 </html>
