@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS_act24</title>
+  </head>
+  <body>
+    <script language="JavaScript">
+      /*Escribir una función llamada empiezanConA que reciba un arreglo de strings
+       y retorne un nuevo arreglo con todas las palabras que empiecen por "a"
+       (mayúscula o minúscula).*/
+
+      // escribe tu respuesta acá
+      function empiezanConA(arreglo) {
+        //Creamos una variable para ir introduciendo la inicial de cada palabra
+        let inicial;
+        //Creamos además un array intermedio para guardar las palabras que empiezan por A/a
+        let intermedio = [];
+        //Array para el resultado final
+        let resultado = [];
+
+        for (var i = 0; i < arreglo.length; i++) {
+          //guardamos la letra inicial de la palabra en la variable inicial
+          inicial = arreglo[i].charAt(0);
+          //Si la inicial es "a" o "A" entonces introduce la palabra completa en intermedio
+          if (inicial == "a" || inicial == "A") {
+            intermedio.push(arreglo[i]);
+          }
+        }
+        //Al final retorna el resultado final
+        return (resultado = intermedio);
+      }
+
+      // código de prueba
+      console.log(empiezanConA(["beta", "alfa", "Arbol", "gama"])); // ["alfa", "Arbol"]
+      console.log(empiezanConA(["beta", "delta", "gama"])); // []
+      console.log(empiezanConA([])); // []
+    </script>
+  </body>
+</html>

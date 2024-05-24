@@ -3,23 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JS_act15</title>
+    <title>JS_act15b</title>
   </head>
   <body>
     <script language="JavaScript">
-      /*Escribir una función llamada transcribir que reciba un string (una cadena de adn)
-        y retorne otro string (su complemento arn).
-      Los complementos son los siguientes:
-        • G -> C
-        • C -> G
-        • T -> A
-        • A -> U        */
+      /*Escribir una función llamada transcribir que reciba un string (una cadena de ADN)
+              y retorne otro string (su complemento ARN).
+            Los complementos son los siguientes:
+              • G -> C
+              • C -> G
+              • T -> A
+              • A -> U        */
 
       // escribe tu respuesta acá
 
       //PROBLEMA CON LAS '' Y LAS "" (deshabilitar prettier, pero aun así no va)
       function transcribir(adn) {
         let arn = "";
+
         for (let i = 0; i < adn.length; i++) {
           if (adn[i] == "G") {
             arn += "C";
@@ -30,14 +31,16 @@
           } else if (adn[i] == "A") {
             arn += "U";
           } else {
-            arn += "adn desconocido";
+            arn += "DESCONOCIDO";
           }
         }
+
         return arn;
       }
-      // código de prueba
-      console.log(transcribir("ACGT")); // "UGCA"
-      console.log(transcribir("ACGTGGTCTTAA")); // "UGCACCAGAAUU"
+
+      console.log(transcribir("ACGT"));
+
+      console.log(transcribir("ACGTGGTCTTAA"));
     </script>
   </body>
 </html>

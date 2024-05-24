@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS_act18</title>
+  </head>
+  <body>
+    <script language="JavaScript">
+      /*Escribir una función llamada max que reciba un arreglo de números y retorne el
+       número máximo.
+      Nota: Intentarlo hacer sin el método Math.max de JavaScript.*/
+
+      // escribe tu respuesta acá
+      function max(arreglo) {
+        //Empleamos la variable num para ir comparando números
+        let num = 0;
+        //El bucle va a recorrer desde el primer item del arreglo hasta el último
+        for (var i = 0; i < arreglo.length; i++) {
+          //Si el arreglo es mayor que num, a num se le asigna ese item (en la primera comparación
+          //siempre va a ser mayor a no ser que sea un 0)
+          if (num < arreglo[i]) {
+            num = arreglo[i];
+          }
+        }
+        return num;
+      }
+      // código de prueba
+      console.log(max([3, 9, 6])); // 9
+      console.log(max([67, 35, 54, 26])); // 67
+      console.log(max([5, 9, 2, 4, 5, 7])); // 9
+    </script>
+  </body>
+</html>

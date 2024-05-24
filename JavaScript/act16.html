@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS_act16</title>
+  </head>
+  <body>
+    <script language="JavaScript">
+      /*Escribir una función llamada capitalizar que reciba un string y
+       capitalice la primera letra.*/
+
+      // escribe tu respuesta acá
+
+      function capitalizar(palabra) {
+        //Con charAt(0) seleccionamos el primer caracter
+        //toUpperCase() pone ese carater en mayúsculas
+        //Eso se concatena con:
+        //slice(1), que coge la palabra a partir del segundo caracter
+        return palabra.charAt(0).toUpperCase() + palabra.slice(1);
+      }
+      // código de prueba
+      console.log(capitalizar("pedro")); // "Pedro"
+      console.log(capitalizar("hola mundo")); // "Hola mundo"
+      console.log(capitalizar("")); // ""
+    </script>
+  </body>
+</html>

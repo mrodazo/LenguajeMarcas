@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS_act25</title>
+  </head>
+  <body>
+    <script language="JavaScript">
+      /*Escribir una función llamada terminanConS que reciba un arreglo de strings
+       y retorne un nuevo arreglo con todas las palabras que terminan con "s"
+        (mayúscula o minúscula).*/
+
+      // escribe tu respuesta acá
+      function terminanConS(arreglo) {
+        //Creamos una variable para ir introduciendo cada palabra del arreglo
+        let palabra;
+        //Creamos una variable para tomar el largo de cada palabra
+        let largo;
+        //Creamos una variable para ir introduciendo la final de cada palabra
+        let final;
+        //Creamos además un array intermedio para guardar las palabras que terminan por s/S
+        let intermedio = [];
+        //Array para el resultado final
+        let resultado = [];
+
+        for (var i = 0; i < arreglo.length; i++) {
+          //guardamos una de las palabras en palabra
+          palabra = arreglo[i];
+          //guardamos la letra final de la palabra en la variable final
+          final = palabra.charAt(palabra.length - 1);
+          //Si la final es "s" o "S" entonces introduce la palabra completa en intermedio
+          if (final == "s" || final == "S") {
+            intermedio.push(palabra);
+          }
+        }
+        //Al final retorna el resultado final
+        return (resultado = intermedio);
+      }
+
+      // código de prueba
+      console.log(terminanConS(["pruebas", "arroz", "árbol", "tokens"])); // ["pruebas", "tokens"]
+      console.log(terminanConS(["beta", "delta", "gama"])); // []
+      console.log(terminanConS([])); // []
+    </script>
+  </body>
+</html>

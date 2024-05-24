@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS_act23</title>
+  </head>
+  <body>
+    <script language="JavaScript">
+      /*Escribir una función llamada duplicar que reciba un arreglo de números
+       y retorne un nuevo arreglo donde cada número esté multiplicado por dos (2).*/
+
+      // escribe tu respuesta acá
+      function duplicar(arreglo) {
+        //Creamos una variable para ir introduciendo los valores multiplicados
+        let doble;
+        let resultado = [];
+        //Primero miramos si el arreglo está vacío, para que no de error si lo x2
+        if (arreglo.length == 0) {
+          return resultado;
+        } else {
+          for (var i = 0; i < arreglo.length; i++) {
+            //Si no, lo va recorriendo, multiplicándolo x2 y añadiéndolo al resultado
+            doble = arreglo[i] * 2;
+            resultado.push(doble);
+          }
+          return resultado;
+        }
+      }
+
+      // código de prueba
+      console.log(duplicar([1, 2, 3])); // [2, 4, 6]
+      console.log(duplicar([])); // []
+    </script>
+  </body>
+</html>

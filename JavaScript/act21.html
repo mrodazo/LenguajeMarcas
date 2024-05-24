@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS_act21</title>
+  </head>
+  <body>
+    <script language="JavaScript">
+      /*Escribir una función llamada pares que reciba un arreglo de números y retorne
+      un nuevo arreglo con los números pares únicamente.*/
+
+      // escribe tu respuesta acá
+      function pares(arreglo) {
+        //Creamos una variable para ir introduciendo los valores pares que obtengamos
+        let par;
+        let resultado = [];
+        for (var i = 0; i < arreglo.length; i++) {
+          if (arreglo[i] % 2 == 0) {
+            //Si el número es par (resto de la div por 2 = 0) asignamos ese item a la variable par
+            par = arreglo[i];
+            //Añadimos al array resultado el valor par introducido en dicha variable (con push)
+            resultado.push(par);
+          }
+        }
+        return resultado;
+      }
+      // código de prueba
+      console.log(pares([1, 2, 3, 4, 5, 6])); // [2, 4, 6]
+      console.log(pares([])); // []
+    </script>
+  </body>
+</html>

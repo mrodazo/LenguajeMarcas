@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS_act20</title>
+  </head>
+  <body>
+    <script language="JavaScript">
+      /*Escribir una función llamada password que reciba un string y retorne un nuevo
+       string realizando los siguientes cambios:
+            • Las mayúsculas se reemplazan por minúsculas.
+            • Se eliminan los espacios en blanco.
+            • Reemplaza el caracter “a” por “4”.
+            • Reemplaza el caracter “e” por “3”.
+            • Reemplaza el caracter “i” por “1”.
+            • Reemplaza el carater “o” por “0”.*/
+
+      // escribe tu respuesta acá
+      function password(contrasena) {
+        //Primero pasamos a minúsculas
+        contrasena = contrasena.toLowerCase();
+        //Eliminamos los espacios vacíos
+        contrasena = contrasena.replaceAll(" ", "");
+        //Reemplazamos "a" por "4"
+        contrasena = contrasena.replaceAll("a", "4");
+        //Reemplazamos "e" por "3"
+        contrasena = contrasena.replaceAll("e", "3");
+        //Reemplazamos "i" por "1"
+        contrasena = contrasena.replaceAll("i", "1");
+        //Reemplazamos "o" por "0"
+        contrasena = contrasena.replaceAll("o", "0");
+        //Si no ponemos replaceAll sólo va a reemplazar la primera coincidencia
+
+        return contrasena;
+      }
+      // código de prueba
+      console.log(password("hola")); // "h0l4"
+      console.log(password("esta es una prueba")); // "3st43sun4pru3b4"
+      console.log(password("")); // ""
+    </script>
+  </body>
+</html>

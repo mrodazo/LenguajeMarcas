@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS_act19</title>
+  </head>
+  <body>
+    <script language="JavaScript">
+      /*Escribir una función llamada min que reciba un arreglo de números y retorne el número mínimo.
+      Nota: Intentarlo hacer sin el método Math.min de JavaScript.*/
+
+      // escribe tu respuesta acá
+      function min(arreglo) {
+        //Inicializamos num con el último item del arreglo, el cual se elimina
+        let num = arreglo.pop();
+        //Recorremos el arreglo desde el primer item hasta el último -1 (el último es el que
+        //hemos asignado a num y eliminado del arreglo)
+        for (var i = 0; i < arreglo.length; i++) {
+          //Es igual que el caso de el máximo pero esta vez el item del arreglo debe ser > num
+          if (num > arreglo[i]) {
+            num = arreglo[i];
+          }
+        }
+        return num;
+      }
+      // código de prueba
+      console.log(min([3, 9, 6])); // 3
+      console.log(min([67, 35, 54, 26])); // 26
+      console.log(min([5, 9, 2, 4, 5, 7])); // 2
+    </script>
+  </body>
+</html>

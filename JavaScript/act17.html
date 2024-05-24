@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS_act17</title>
+  </head>
+  <body>
+    <script language="JavaScript">
+      /*Escribir una función llamada capitalizar que reciba un string y
+       capitalice la primera letra de cada palabra.*/
+
+      // escribe tu respuesta acá
+
+      //Sacamos la función de capitalizar cada palabra para mayor limpieza
+      function capitalizaPalabra(palabra) {
+        return palabra.charAt(0).toUpperCase() + palabra.slice(1);
+      }
+
+      function capitalizar(frase) {
+        //Primero necesitamos separar las distintas palabras del string
+        let fraseArray = frase.split(" ");
+        let resultado = [];
+        let palabraCapi;
+        //Con esto capitalizamos la primera letra de cada palabra de la frase
+        for (var i = 0; i < fraseArray.length; i++) {
+          //Asignamos a palabraCapi la palabra capitalizada (le estamos pasando una palabra)
+          palabraCapi = capitalizaPalabra(fraseArray[i]);
+
+          //Metemos esa palabra al final del array resultado
+          resultado.push(palabraCapi);
+        }
+        //Unimos las distintas palabras ya capitalizadas
+        return resultado.join(" ");
+      }
+      // código de prueba
+      console.log(capitalizar("hola mundo")); // "Hola Mundo"
+      console.log(capitalizar("make it real")); // "Make It Real"
+      console.log(capitalizar("")); // ""
+    </script>
+  </body>
+</html>
